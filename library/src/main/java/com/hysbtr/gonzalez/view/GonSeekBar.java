@@ -1,9 +1,9 @@
 package com.hysbtr.gonzalez.view;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatSeekBar;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.widget.SeekBar;
 
 import com.hysbtr.gonzalez.IGonView;
 import com.hysbtr.gonzalez.delegate.GonViewDelegate;
@@ -11,7 +11,7 @@ import com.hysbtr.gonzalez.delegate.GonViewDelegate;
 /**
  * Created by guoxiaodong on 2017/8/1
  */
-public class GonSeekBar extends AppCompatSeekBar implements IGonView {
+public class GonSeekBar extends SeekBar implements IGonView {
     private GonViewDelegate delegate;
 
     public GonSeekBar(Context context) {

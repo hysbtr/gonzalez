@@ -2,9 +2,9 @@ package com.hysbtr.gonzalez.view;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v7.widget.AppCompatButton;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.hysbtr.gonzalez.IGonTextView;
 import com.hysbtr.gonzalez.IGonView;
@@ -13,7 +13,7 @@ import com.hysbtr.gonzalez.delegate.GonTextViewDelegate;
 /**
  * Created by guoxiaodong on 2017/8/1
  */
-public class GonButton extends AppCompatButton implements IGonView, IGonTextView {
+public class GonButton extends Button implements IGonView, IGonTextView {
     private GonTextViewDelegate delegate;
 
     public GonButton(Context context) {

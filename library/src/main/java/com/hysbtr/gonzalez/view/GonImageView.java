@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.hysbtr.gonzalez.IGonView;
 import com.hysbtr.gonzalez.delegate.GonViewDelegate;
@@ -11,7 +12,7 @@ import com.hysbtr.gonzalez.delegate.GonViewDelegate;
 /**
  * Created by guoxiaodong on 2017/8/1
  */
-public class GonImageView extends AppCompatImageView implements IGonView {
+public class GonImageView extends ImageView implements IGonView {
     private GonViewDelegate delegate;
 
     public GonImageView(Context context) {

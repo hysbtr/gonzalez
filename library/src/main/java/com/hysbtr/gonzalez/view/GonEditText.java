@@ -2,9 +2,9 @@ package com.hysbtr.gonzalez.view;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v7.widget.AppCompatEditText;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.widget.EditText;
 
 import com.hysbtr.gonzalez.IGonTextView;
 import com.hysbtr.gonzalez.IGonView;
@@ -13,7 +13,7 @@ import com.hysbtr.gonzalez.delegate.GonTextViewDelegate;
 /**
  * Created by guoxiaodong on 2017/10/31 10:34
  */
-public class GonEditText extends AppCompatEditText implements IGonView, IGonTextView {
+public class GonEditText extends EditText implements IGonView, IGonTextView {
     private GonTextViewDelegate delegate;
 
     public GonEditText(Context context) {

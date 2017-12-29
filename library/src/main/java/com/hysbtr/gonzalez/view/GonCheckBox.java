@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 
 import com.hysbtr.gonzalez.IGonTextView;
 import com.hysbtr.gonzalez.IGonView;
@@ -13,7 +14,7 @@ import com.hysbtr.gonzalez.delegate.GonTextViewDelegate;
 /**
  * Created by guoxiaodong on 2017/8/3
  */
-public class GonCheckBox extends AppCompatCheckBox implements IGonView, IGonTextView {
+public class GonCheckBox extends CheckBox implements IGonView, IGonTextView {
     private GonTextViewDelegate delegate;
 
     public GonCheckBox(Context context) {

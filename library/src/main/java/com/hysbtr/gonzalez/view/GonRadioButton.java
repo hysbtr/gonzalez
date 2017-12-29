@@ -2,9 +2,9 @@ package com.hysbtr.gonzalez.view;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.support.v7.widget.AppCompatRadioButton;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
 
 import com.hysbtr.gonzalez.IGonTextView;
 import com.hysbtr.gonzalez.IGonView;
@@ -13,7 +13,7 @@ import com.hysbtr.gonzalez.delegate.GonTextViewDelegate;
 /**
  * Created by guoxiaodong on 2017/8/3
  */
-public class GonRadioButton extends AppCompatRadioButton implements IGonView, IGonTextView {
+public class GonRadioButton extends RadioButton implements IGonView, IGonTextView {
     private GonTextViewDelegate delegate;
 
     public GonRadioButton(Context context) {
