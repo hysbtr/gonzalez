@@ -1,6 +1,9 @@
 package com.hysbtr.gonzalez.view;
 
+import android.annotation.TargetApi;
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +24,13 @@ public class GonView extends View implements IGonView {
 
     public GonView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        init();
+        delegate.initAttributes(context, attrs);
+    }
+
+    @TargetApi(21)
+    public GonView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
         init();
         delegate.initAttributes(context, attrs);
     }

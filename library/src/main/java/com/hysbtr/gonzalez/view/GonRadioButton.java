@@ -1,7 +1,10 @@
 package com.hysbtr.gonzalez.view;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
@@ -29,6 +32,13 @@ public class GonRadioButton extends RadioButton implements IGonView, IGonTextVie
 
     public GonRadioButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        init();
+        delegate.initAttributes(context, attrs);
+    }
+
+    @TargetApi(21)
+    public GonRadioButton(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
         init();
         delegate.initAttributes(context, attrs);
     }

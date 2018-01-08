@@ -17,7 +17,7 @@ allprojects {
         global_compileSdkVersion = 26
         global_minSdkVersion = 16
         global_targetSdkVersion = 26
-        global_supportVersion = '27.0.2'
+        global_supportVersion = '26.0.0'
     }
 }
 
